@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Consultation de psychologie",
+        "price": "75",
+        "number": "",
+        "desc": "Consultation régulière de psychologie",
+        "time": "45",
+        "why": [
+            "Gestion du stress et de l'anxiété",
+            "Problèmes relationnels",
+            "Confiance en soi",
+            "Burn-out",
+            "Dépression"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Hypnose",
+        "price": "70",
+        "number": "2 à 3",
+        "desc": "Premier rdv pour établir les objectifs et les besoins puis 1 à 2 sessions d'hypnoses minimum.",
+        "time": "45",
+        "why": [
+            "Arrêt du tabac",
+            "Gestion des phobies",
+            "Gestion de la douleur",
+            "Troubles du sommeil",
+            "Amélioration des performances"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "EMDR",
+        "price": "80",
+        "number": "3 à 4",
+        "desc": "Une première rencontre pour établir les objectifs puis 2 à 3 rdv si nécessaire",
+        "time": "45",
+        "why": [
+            "Traumatismes de l'enfance",
+            "Stress post-traumatique",
+            "Gestion des émotions envahissantes",
+            "Amélioration de l'estime de soi",
+            "Phobies liées à des expériences passées"
+        ]
+    }
+]
