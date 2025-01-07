@@ -4,6 +4,8 @@
         "job": "Votre pratique (ex : psychologue)",
         "who": "Qui être vous",
         "where": "Où travaillez vous",
-        "jobDetails": "Détaillez votre/vos pratique(s)"
+        "jobDetails": "Détaillez votre/vos pratique(s)",
+        "contactTitle": "Vous voulez me contacter ?",
+        "contactSubtitle": "Rien de plus simple"
         
     }
