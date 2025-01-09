@@ -8,11 +8,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        handwriting: ['Cedarville Cursive'], // Police manuscrite
+        handwriting: ['parisienne'], // Police manuscrite
         sans: ['"Lato"', ...defaultTheme.fontFamily.sans], // Police principale
       },
       colors: {
         mainColor: "#022c22", // Couleur personnalisée principale
+        secondColor: "#c4bb3f",
+        blackBG: "#00000077",
       },
     },
   },

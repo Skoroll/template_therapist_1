@@ -6,6 +6,7 @@ import Footer from "./components/Footer.tsx";
 import Banner from "./components/Banner.tsx";
 import imgForBanner from "./assets/banner/dark-plant-background-free-photo.webp";
 import { LangProvider } from "./context/LangContext.tsx";
+import "./App.css"
 
 function App() {
   return (

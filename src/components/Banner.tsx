@@ -6,7 +6,7 @@ interface BannerProps {
 
 function Banner({ bannerIMG }: BannerProps) {
   return (
-    <div className="banner h-72 md:h-44 w-full absolute top-0 left-0 z-10">
+    <div className="banner h-80 md:h-60 w-full absolute top-0 left-0 z-10">
       <img
         className="w-full h-full  object-cover"
         src={bannerIMG}

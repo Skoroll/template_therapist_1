@@ -9,7 +9,7 @@ const Contact = () => {
 
 
 
-      <div className="max-w-4xl mx-auto mt-8 bg-white shadow-lg rounded-lg p-6 space-y-8">
+      <div className="max-w-4xl mx-auto mt-20 bg-white shadow-lg rounded-lg p-6 space-y-8">
         {/* Numéro de téléphone */}
         <section>
           <h2 className="text-2xl font-semibold text-gray-800">Contactez-nous</h2>
@@ -22,13 +22,6 @@ const Contact = () => {
         <section>
           <p className="text-gray-600">
             <strong>Email :</strong> <a href="mailto:contact@example.com" className="text-blue-600 hover:underline">contact@example.com</a>
-          </p>
-        </section>
-
-        {/* Téléphone */}
-        <section>
-          <p className="text-gray-600">
-            <strong>Téléphone :</strong> <a href="tel:0000000000" className="text-blue-600 hover:underline">0000000000</a>
           </p>
         </section>
 

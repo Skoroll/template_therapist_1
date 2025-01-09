@@ -13,6 +13,7 @@ const Title: React.FC<TitleProps> = ({ mainTitle, subTitle }) => {
             z-20 
             text-white
             relative
+            text-center
             "
     >
       <h1
