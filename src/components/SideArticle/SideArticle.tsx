@@ -14,7 +14,7 @@ interface SideArticleProps {
 function SideArticle({title, wrapperClasses, partOne, partTwo, baseClasses,partOneClasses, partTwoClasses}: SideArticleProps){
     return(
         <div className={`side-article flex bg-gray-100 gap-3 p-3 ${baseClasses}`}>
-          <h2 className="-title text-2xl border-b-2 border-t-2">{title}</h2>
+          <h2 className="-title text-3xl border-b-2 border-t-2">{title}</h2>
         <div className={`side-article-wrapper flex ${wrapperClasses}`}>
             <div className={`partOne x w-full md:w-full ${partOneClasses}`}>
               {partOne}

@@ -1,8 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Import du composant Link
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import frUi from "../assets/fr/frUi.json";
+import Modal from "./Modal/Modal.tsx";
+import Reservation from "./Modal/Reservation.tsx";
 
 function Nav() {
+
+  const [modalOpen, isModalOpen] = useState(false);
+
+  const handleModalClick = () => {
+    isModalOpen(!modalOpen);
+  };
 
   const navItems = [
     { path: "/", label: frUi.main },
@@ -19,6 +27,7 @@ function Nav() {
         flex-col
         m-auto 
         mt-2
+        relative
         text-secondColor
       "
     >
@@ -45,6 +54,7 @@ function Nav() {
       </ul>
 
       <button
+      onClick={handleModalClick}
         className="
         mt-3
        
@@ -62,6 +72,12 @@ function Nav() {
         <Link to={"reservation"}></Link>
         {frUi.rendezVous}
       </button>
+
+      {modalOpen && (
+        <Modal
+        content={<Reservation/>}
+        className=""/>
+      )}
     </nav>
   );
 }
