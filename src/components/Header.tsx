@@ -19,13 +19,15 @@ function Header() {
     >
       <p
         className="
-                h-10 
-                w-12 
-                border
-                m-auto
-                
-                md:m-0
-                "
+          h-12 
+          w-12 
+          border
+          m-auto
+          flex
+          justify-center
+          items-center 
+          md:m-0
+          "
       >
         Logo
       </p>
