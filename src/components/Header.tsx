@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "./Nav.tsx";
-import LangSetting from "./LangSetting.tsx";
+import Nav from "./Nav";
+import LangSetting from "./LangSetting";
 
 function Header() {
   return (

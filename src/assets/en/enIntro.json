@@ -1,0 +1,19 @@
+{
+    "name": "Your name",
+    "job": "Your practice (e.g., psychologist)",
+    "who": "Who are you",
+    "where": "Where do you work",
+    "jobDetails": "Detail your practice(s)",
+    "contactTitle": "Do you want to contact me?",
+    "contactSubtitle": "It's as easy as that",
+    "aboutTitle": "Who am I?",
+    "aboutSubtitle": "Subtitle",
+    "aboutMyLife": "Your life/course background",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "diploma": "My diplomas",
+    "diploma1": "Diploma/Training name",
+    "diploma2": "Diploma/Training name",
+    "diploma3": "Diploma/Training name",
+    "futurFormation": "Future trainings",
+    "futurFormationName": "Desired training name"
+}

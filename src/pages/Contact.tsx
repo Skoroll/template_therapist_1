@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../components/Title.tsx";
+import Title from "../components/Title";
 import frIntro from "../assets/fr/frIntro.json";
 
 const Contact = () => {
@@ -83,7 +83,7 @@ const Contact = () => {
             {/* Bouton Envoyer */}
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300"
+              className="w-full bg-secondColor text-white border border-transparent font-semibold py-2 px-4 rounded-lg hover:bg-white hover:text-black hover:border-gray-300 transition duration-300"
             >
               Envoyer
             </button>

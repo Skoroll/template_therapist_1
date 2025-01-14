@@ -1,23 +1,34 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useContext, useState } from "react";
 
+// Type de contexte
+type LangContextType = {
+  lang: string;
+  changeLang: (newLang: string) => void; // Définir la fonction changeLang dans le type
+};
 
-// Créez le contexte
-const LangContext = createContext();
+// Création du contexte avec un type par défaut
+const LangContext = createContext<LangContextType | undefined>(undefined);
 
-// Créez un fournisseur pour le contexte
-export function LangProvider({ children }) {
-  const [lang, setLang] = useState("fr");
+export const useLang = (): LangContextType => {
+  const context = useContext(LangContext);
+  if (!context) {
+    throw new Error("useLang must be used within a LangProvider");
+  }
+  return context;
+};
 
-  const changeLang = (newLang) => setLang(newLang);
+// LangProvider pour gérer la langue dans l'application
+export const LangProvider = ({ children }: { children: React.ReactNode }) => {
+  const [lang, setLang] = useState<string>("fr"); // Langue par défaut
+
+  // Fonction pour changer la langue
+  const changeLang = (newLang: string) => {
+    setLang(newLang);
+  };
 
   return (
     <LangContext.Provider value={{ lang, changeLang }}>
       {children}
     </LangContext.Provider>
   );
-}
-
-// Hook personnalisé pour utiliser le contexte
-export function useLang() {
-  return useContext(LangContext);
-}
+};

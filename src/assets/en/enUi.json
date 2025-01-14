@@ -1,0 +1,16 @@
+{
+    "main": "Home",
+    "prices": "Prices",
+    "about": "About me",
+    "contact": "Contact",
+    "consultationHeading": "My Consultations",
+    "consultationHowHeading": "How a consultation works",
+    "navigation": "Navigate",
+    "rendezVous": "Book an Appointment",
+    "email": "Email",
+    "phone": "Phone",
+    "dataCollection": "The data collected via the contact form (name, first name, email, phone number) are solely used to respond to your request.",
+    "legal": "Legal Notice",
+    "confidential": "Privacy Policy",
+    "yourTherapist": "Your Therapist"
+}

@@ -12,10 +12,14 @@ module.exports = {
         sans: ['"Lato"', ...defaultTheme.fontFamily.sans], // Police principale
       },
       colors: {
-        mainColor: "#022c22", // Couleur personnalisée principale
+        mainColor: "#022c22",
         secondColor: "#c4bb3f",
         blackBG: "#00000077",
+        textLight: "#4b5563"
       },
+      backgroundImage: {
+        'custom-bg': "url("
+      }
     },
   },
   plugins: [],

@@ -1,16 +1,50 @@
 import React from "react";
-import Title from "../components/Title.tsx";
-import How from "../components/How.tsx";
+import Title from "../components/Title";
+import How from "../components/How";
 import frIntro from "../assets/fr/frIntro.json";
-import Illustration from "../components/SideArticle/Illustration.tsx";
-import IlluImg1 from "../assets/illustrations/istockphoto-1450268558-2048x2048.jpg";
-import IlluImg2 from "../assets/illustrations/istockphoto-1391812172-2048x2048.jpg";
-import IlluImg3 from "../assets/illustrations/istockphoto-1468616190-2048x2048.jpg"
-import SideArticle from "../components/SideArticle/SideArticle.tsx";
-import DescriptionText from "../components/SideArticle/DescriptionTxt.tsx";
+import Illustration from "../components/SideArticle/Illustration";
+import IlluImg1 from "../assets/illustrations/istockphoto-1450268558-2048x2048.webp";
+import IlluImg2 from "../assets/illustrations/istockphoto-1391812172-2048x2048.webp";
+import IlluImg3 from "../assets/illustrations/istockphoto-1468616190-2048x2048.webp";
+import Divider from "../components/Divider";
+import SideArticle from "../components/SideArticle/SideArticle";
+import DescriptionText from "../components/SideArticle/DescriptionTxt";
 import frSideArticle from "../assets/fr/frSideArticle.json";
 
 function Home() {
+
+
+  const articles = [
+    {
+      title: frSideArticle.title1,
+      illuImage: IlluImg1,
+      altTxt: frSideArticle.illu1,
+      illuTxt: frSideArticle.illu1,
+      subtitle: frSideArticle.sub1,
+      content: frSideArticle.content1,
+      wrapperClasses: "flex-col md:flex-row",
+    },
+    {
+      title: frSideArticle.title2,
+      illuImage: IlluImg2,
+      altTxt: frSideArticle.illu2,
+      illuTxt: frSideArticle.illu2,
+      subtitle: frSideArticle.sub2,
+      content: frSideArticle.content2,
+      wrapperClasses: "flex-col md:flex-row-reverse",
+    },
+    {
+      title: frSideArticle.title3,
+      illuImage: IlluImg3,
+      altTxt: frSideArticle.illu3,
+      illuTxt: frSideArticle.illu3,
+      subtitle: frSideArticle.sub3,
+      content: frSideArticle.content3,
+      wrapperClasses: "flex-col md:flex-row",
+    },
+  ];
+  
+
   return (
     <div className="home flex flex-col relative pos z-1 p-3 gap-6 ">
       <Title mainTitle={frIntro.name} subTitle={frIntro.job} />
@@ -26,83 +60,40 @@ function Home() {
                     font-handwriting
                     "
         >
-          
           {frIntro.who} {frIntro.where} {frIntro.jobDetails}
         </p>
       </div>
 
-
-      <SideArticle
-        baseClasses="flex-col"
-        partOneClasses=""
-        wrapperClasses="flex-col md:flex-row"
-        title={frSideArticle.title1}
-        partOne={
-          <Illustration
-            illuImage={IlluImg1}
-            altTxt={frSideArticle.illu1}
-            illuTxt={frSideArticle.illu1}
-            divClassName=""
-            imgClassName="h-full object-cover "
-          />
-        }
-        partTwoClasses=""
-        partTwo={
-          <DescriptionText
-            subtitle={frSideArticle.sub1}
-            content={frSideArticle.content1}
-          />
-        }
+      {articles.map((article, index) => (
+  <SideArticle
+    key={index}
+    baseClasses="flex-col"
+    partOneClasses=""
+    wrapperClasses={article.wrapperClasses}
+    title={article.title}
+    partOne={
+      <Illustration
+        illuImage={article.illuImage}
+        altTxt={article.altTxt}
+        illuTxt={article.illuTxt}
+        divClassName=""
+        imgClassName="h-full object-cover"
       />
-
-<SideArticle
-        baseClasses="flex-col"
-        partOneClasses=""
-        wrapperClasses="flex-col md:flex-row-reverse"
-        title={frSideArticle.title2}
-        partOne={
-          <Illustration
-            illuImage={IlluImg2}
-            altTxt={frSideArticle.illu2}
-            illuTxt={frSideArticle.illu2}
-            divClassName=""
-            imgClassName="h-full object-cover "
-          />
-        }
-        partTwoClasses=""
-        partTwo={
-          <DescriptionText
-            subtitle={frSideArticle.sub2}
-            content={frSideArticle.content2}
-          />
-        }
+    }
+    partTwoClasses=""
+    partTwo={
+      <DescriptionText
+        subtitle={article.subtitle}
+        content={article.content}
       />
+    }
+  />
+))}
 
-<SideArticle
-        baseClasses="flex-col"
-        partOneClasses=""
-        wrapperClasses="flex-col md:flex-row"
-        title={frSideArticle.title3}
-        partOne={
-          <Illustration
-            illuImage={IlluImg3}
-            altTxt={frSideArticle.illu3}
-            illuTxt={frSideArticle.illu3}
-            divClassName=""
-            imgClassName="h-full object-cover "
-          />
-        }
-        partTwoClasses=""
-        partTwo={
-          <DescriptionText
-            subtitle={frSideArticle.sub3}
-            content={frSideArticle.content3}
-          />
-        }
-      />
+
+      <Divider className=" w-1/2 h-1 m-auto" />
+
       <How />
-
-
     </div>
   );
 }

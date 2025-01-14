@@ -1,42 +1,50 @@
 import React from "react";
+import contactInfo from "../assets/contactInfo.json";
 import frUi from "../assets/fr/frUi.json";
+import frIntro from "../assets/fr/frIntro.json";
+import deUi from "../assets/de/deUi.json";
+import deIntro from "../assets/de/deIntro.json";
+import enUi from "../assets/en/enUi.json";
+import enIntro from "../assets/en/enIntro.json";
+import { useLang } from "../context/LangContext";
+
+// Déclarez un type pour les langues
+type Lang = "fr" | "en" | "de";
 
 function Footer() {
-  return (
-    <footer className="footer flex flex-wrap p-3">
-      <div className="w-full">
-        <button
-          className="
-                btn
-                w-full
-                "
-        >
-          {frUi.rendezVous}
-        </button>
-      </div>
+    const { lang } = useLang();
 
-      <div
-        className="
-                flex 
-                flex-col
-                "
-      >
-        <p>{frUi.navigation}</p>
-        <ul
-          className="
-                    flex
-                    flex-wrap
-                    gap-2
-                    "
-        >
-          <li>{frUi.main}</li>
-          <li>{frUi.prices}</li>
-          <li>{frUi.about}</li>
-          <li>{frUi.contact}</li>
-        </ul>
-      </div>
-    </footer>
-  );
+    // Associer chaque langue à ses objets de texte
+    const chosenLang: Record<Lang, { ui: typeof frUi, intro: typeof frIntro }> = {
+        fr: { ui: frUi, intro: frIntro },
+        en: { ui: enUi, intro: enIntro },
+        de: { ui: deUi, intro: deIntro },
+    };
+
+    // Sélectionner les traductions en fonction de la langue active
+    const currentLang = chosenLang[lang as Lang];
+
+    return (
+        <footer className="bg-green-100 text-gray-800 py-6 px-4 md:px-8">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+                {/* Informations principales */}
+                <div className="text-center md:text-left mb-4 md:mb-0">
+                    <p className="font-semibold text-lg">{currentLang.ui.yourTherapist}</p>
+                    <p>{currentLang.intro.name}</p>
+                    <p>{currentLang.ui.email} : <a href="mailto:email@therapeute.com" className="text-green-700 underline">{contactInfo.email}</a></p>
+                    <p>{currentLang.ui.phone} : <a href={`tel:${contactInfo.telephone}`} className="text-green-700 underline">{contactInfo.telephone}</a></p>
+                </div>
+
+                {/* Mentions légales et politique de confidentialité */}
+                <div className="text-sm text-center md:text-right">
+                    <p className="mb-2">{currentLang.ui.dataCollection}</p>
+                    <p>
+                        <a href="#" className="text-green-700 underline">{currentLang.ui.legal}</a> | <a href="#" className="text-green-700 underline">{currentLang.ui.confidential}</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    );
 }
 
 export default Footer;

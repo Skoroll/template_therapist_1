@@ -1,22 +1,34 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import frUi from "../assets/fr/frUi.json";
-import Modal from "./Modal/Modal.tsx";
-import Reservation from "./Modal/Reservation.tsx";
+import enUi from "../assets/en/enUi.json";
+import deUi from "../assets/de/deUi.json";
+import Modal from "./Modal/Modal";
+import { useLang } from "../context/LangContext";
+import Reservation from "./Modal/Reservation";
+
+
 
 function Nav() {
+  const {lang} = useLang();
 
   const [modalOpen, isModalOpen] = useState(false);
+
+  const chosenLang = {
+    fr: frUi,
+    en: enUi,
+    de: deUi,
+  }
 
   const handleModalClick = () => {
     isModalOpen(!modalOpen);
   };
 
   const navItems = [
-    { path: "/", label: frUi.main },
-    { path: "/prices", label: frUi.prices },
-    { path: "/about", label: frUi.about },
-    { path: "/contact", label: frUi.contact },
+    { path: "/", label: chosenLang[lang].main },
+    { path: "/prices", label: chosenLang[lang].prices },
+    { path: "/about", label: chosenLang[lang].about },
+    { path: "/contact", label: chosenLang[lang].contact },
   ];
 
   return (
@@ -69,8 +81,7 @@ function Nav() {
             rounded-lg
             "
       >
-        <Link to={"reservation"}></Link>
-        {frUi.rendezVous}
+        {chosenLang[lang].rendezVous}
       </button>
 
       {modalOpen && (
