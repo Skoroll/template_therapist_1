@@ -1,47 +1,47 @@
 [
     {
         "id": 1,
-        "name": "Consultation de psychologie",
+        "name": "Psychologische Beratung",
         "price": "75",
         "number": "",
-        "desc": "Consultation régulière de psychologie",
+        "desc": "Regelmäßige psychologische Beratung",
         "time": "45",
         "why": [
-            "Gestion du stress et de l'anxiété",
-            "Problèmes relationnels",
-            "Confiance en soi",
-            "Burn-out",
-            "Dépression"
+            "Stress- und Angstbewältigung",
+            "Beziehungsprobleme",
+            "Selbstvertrauen",
+            "Burnout",
+            "Depression"
         ]
     },
     {
         "id": 2,
         "name": "Hypnose",
         "price": "70",
-        "number": "2 à 3",
-        "desc": "Premier rdv pour établir les objectifs et les besoins puis 1 à 2 sessions d'hypnoses minimum.",
+        "number": "2 bis 3",
+        "desc": "Erstgespräch zur Festlegung der Ziele und Bedürfnisse, dann mindestens 1 bis 2 Hypnosesitzungen.",
         "time": "45",
         "why": [
-            "Arrêt du tabac",
-            "Gestion des phobies",
-            "Gestion de la douleur",
-            "Troubles du sommeil",
-            "Amélioration des performances"
+            "Rauchen aufhören",
+            "Phobienbewältigung",
+            "Schmerzlinderung",
+            "Schlafstörungen",
+            "Leistungsverbesserung"
         ]
     },
     {
         "id": 3,
         "name": "EMDR",
         "price": "80",
-        "number": "3 à 4",
-        "desc": "Une première rencontre pour établir les objectifs puis 2 à 3 rdv si nécessaire",
+        "number": "3 bis 4",
+        "desc": "Ein erstes Treffen, um Ziele festzulegen, gefolgt von 2 bis 3 Sitzungen, falls erforderlich.",
         "time": "45",
         "why": [
-            "Traumatismes de l'enfance",
-            "Stress post-traumatique",
-            "Gestion des émotions envahissantes",
-            "Amélioration de l'estime de soi",
-            "Phobies liées à des expériences passées"
+            "Kindheitstraumata",
+            "Posttraumatische Belastungsstörung",
+            "Bewältigung überwältigender Emotionen",
+            "Selbstwertsteigerung",
+            "Phobien im Zusammenhang mit vergangenen Erfahrungen"
         ]
     }
 ]

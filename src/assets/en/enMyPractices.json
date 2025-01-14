@@ -8,7 +8,7 @@
         "time": "45",
         "why": [
             "Stress and anxiety management",
-            "Relationship problems",
+            "Relationship issues",
             "Self-confidence",
             "Burnout",
             "Depression"
@@ -19,10 +19,10 @@
         "name": "Hypnosis",
         "price": "70",
         "number": "2 to 3",
-        "desc": "First appointment to establish objectives and needs, then 1 to 2 hypnosis sessions minimum.",
+        "desc": "First appointment to establish goals and needs, then 1 to 2 hypnosis sessions minimum.",
         "time": "45",
         "why": [
-            "Smoking cessation",
+            "Quit smoking",
             "Phobia management",
             "Pain management",
             "Sleep disorders",
@@ -34,13 +34,13 @@
         "name": "EMDR",
         "price": "80",
         "number": "3 to 4",
-        "desc": "First meeting to set objectives, then 2 to 3 appointments if necessary",
+        "desc": "A first meeting to set goals, followed by 2 to 3 sessions if necessary.",
         "time": "45",
         "why": [
             "Childhood trauma",
             "Post-traumatic stress",
             "Managing overwhelming emotions",
-            "Improvement of self-esteem",
+            "Self-esteem improvement",
             "Phobias related to past experiences"
         ]
     }

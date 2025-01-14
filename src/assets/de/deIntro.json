@@ -1,20 +1,19 @@
-
-    {
-        "name": "Votre nom",
-        "job": "Votre pratique (ex : psychologue)",
-        "who": "Qui être vous",
-        "where": "Où travaillez vous",
-        "jobDetails": "Détaillez votre/vos pratique(s)",
-        "contactTitle": "Vous voulez me contacter ?",
-        "contactSubtitle": "Rien de plus simple",
-        "aboutTitle": "Qui suis-je ?",
-        "aboutSubtitle": "Sous-titre",
-        "aboutMyLife": "Votre parcours de vie/formation",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "diploma": "Mes diplômes",
-        "diploma1": "Nom du diplome/formation",
-        "diploma2": "Nom du diplome/formation",
-        "diploma3": "Nom du diplome/formation",
-        "futurFormation": "Future formations",
-        "futurFormationName": "Nom de la formation désirée"
-    }
+{
+    "name": "Ihr Name",
+    "job": "Ihre Praxis (z. B. Psychologe)",
+    "who": "Wer sind Sie",
+    "where": "Wo arbeiten Sie",
+    "jobDetails": "Beschreiben Sie Ihre Praxis(en)",
+    "contactTitle": "Möchten Sie mich kontaktieren?",
+    "contactSubtitle": "Nichts einfacher als das",
+    "aboutTitle": "Wer bin ich?",
+    "aboutSubtitle": "Untertitel",
+    "aboutMyLife": "Ihr Lebensweg/Ausbildung",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "diploma": "Meine Diplome",
+    "diploma1": "Name des Diploms/Ausbildung",
+    "diploma2": "Name des Diploms/Ausbildung",
+    "diploma3": "Name des Diploms/Ausbildung",
+    "futurFormation": "Zukünftige Ausbildungen",
+    "futurFormationName": "Name der gewünschten Ausbildung"
+}

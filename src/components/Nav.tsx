@@ -7,21 +7,35 @@ import Modal from "./Modal/Modal";
 import { useLang } from "../context/LangContext";
 import Reservation from "./Modal/Reservation";
 
+// Définir les types
+type Lang = "fr" | "en" | "de";
 
+interface UiStrings {
+  main: string;
+  prices: string;
+  about: string;
+  contact: string;
+  rendezVous: string;
+}
+
+// Typage explicite de `chosenLang`
+const chosenLang: Record<Lang, UiStrings> = {
+  fr: frUi,
+  en: enUi,
+  de: deUi,
+};
 
 function Nav() {
-  const {lang} = useLang();
+  const { lang } = useLang(); // Typé comme "fr" | "en" | "de"
 
-  const [modalOpen, isModalOpen] = useState(false);
-
-  const chosenLang = {
-    fr: frUi,
-    en: enUi,
-    de: deUi,
-  }
+  const [modalOpen, setModalOpen] = useState(false);
 
   const handleModalClick = () => {
-    isModalOpen(!modalOpen);
+    setModalOpen(!modalOpen); // Inverser l'état de la modale
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false); // Fonction pour fermer la modale
   };
 
   const navItems = [
@@ -43,52 +57,43 @@ function Nav() {
         text-secondColor
       "
     >
-      <ul
-        className="flex gap-2 m-auto mr-0 border-b-2 border-secondColor p-1">
-          {navItems.map((item) =>(
-
- 
-        <li
-        key={item.path}
-          className="
-            p-1
-            cursor-pointer
-            hover:bg-secondColor 
-            hover:text-white
-            transition
-            duration-1000
-          "
-        >
-          <Link to={item.path}>{item.label}</Link>
-        </li>
+      <ul className="flex gap-2 m-auto mr-0 border-b-2 border-secondColor p-1">
+        {navItems.map((item) => (
+          <li
+            key={item.path}
+            className="
+              p-1
+              cursor-pointer
+              hover:bg-secondColor 
+              hover:text-white
+              transition
+              duration-1000
+            "
+          >
+            <Link to={item.path}>{item.label}</Link>
+          </li>
         ))}
-
       </ul>
 
       <button
-      onClick={handleModalClick}
+        onClick={handleModalClick}
         className="
-        mt-3
-       
-            order-btn p-3             
-            cursor-pointer
-            hover:bg-secondColor 
-            hover:text-white
-            transition
-            duration-1000
+          mt-3
+          order-btn p-3             
+          cursor-pointer
+          hover:bg-secondColor 
+          hover:text-white
+          transition
+          duration-1000
           border-secondColor
-            border-2
-            rounded-lg
-            "
+          border-2
+          rounded-lg
+        "
       >
         {chosenLang[lang].rendezVous}
       </button>
 
-      {modalOpen && (
-        <Modal
-        content={<Reservation/>}
-        className=""/>
-      )}
+      {modalOpen && <Modal content={<Reservation />} onClose={handleCloseModal} />}
     </nav>
   );
 }

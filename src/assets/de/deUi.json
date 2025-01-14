@@ -1,18 +1,16 @@
 {
-    "main": "Accueil",
-    "prices": "Tarifs",
-    "about": "A propos",
-    "contact": "Contact",
-    "consultationHeading": "Mes consultations",
-    "consultationHowHeading": "Comment se déroule une consultation",
-    "navigation": "Naviguer",
-    "rendezVous": "Prendre RDV",
-    "email": "Email",
-    "phone": "Téléphone",
-    "dataCollection": "Les données collectées via le formulaire de contact (nom, prénom, email, numéro de téléphone) sont uniquement utilisées pour répondre à votre demande.",
-    "legal": "Mentions légales",
-    "confidential": "Politique de confidentialité",
-    "yourTherapist" : "Votre thérapeute"
-
-
+    "main": "Startseite",
+    "prices": "Preise",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "consultationHeading": "Meine Konsultationen",
+    "consultationHowHeading": "Wie eine Konsultation abläuft",
+    "navigation": "Navigation",
+    "rendezVous": "Termin vereinbaren",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "dataCollection": "Die über das Kontaktformular gesammelten Daten (Name, Vorname, E-Mail, Telefonnummer) werden ausschließlich verwendet, um Ihre Anfrage zu beantworten.",
+    "legal": "Rechtliche Hinweise",
+    "confidential": "Datenschutzrichtlinie",
+    "yourTherapist": "Ihr Therapeut"
 }

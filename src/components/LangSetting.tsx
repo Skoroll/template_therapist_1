@@ -1,18 +1,16 @@
 import React from "react";
-import { useLang } from "../context/LangContext"; // Utilisation du contexte
+import { useLang } from "../context/LangContext";
 const frFlag: string = require("../assets/icons/france.png").default;
 const enFlag: string = require("../assets/icons/united-kingdom.png").default;
 const deFlag: string = require("../assets/icons/germany.png").default;
 
-
 function LangSetting() {
-  const { lang, changeLang } = useLang(); // Récupérer la langue et la fonction pour la changer
+  const { lang, changeLang } = useLang();
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    changeLang(event.target.value); // Changer la langue globalement via le contexte
+    changeLang(event.target.value as "fr" | "en" | "de"); // Assertion explicite ici
   };
 
-  // Drapeaux associés aux langues
   const flagImages = {
     fr: frFlag,
     en: enFlag,
@@ -28,24 +26,9 @@ function LangSetting() {
           onChange={handleChange}
           className="appearance-none py-2 px-3 rounded-lg"
         >
-          <option value="fr">
-            <div className="flex items-center">
-              <img src={frFlag} alt="Français" className="w-6 h-6 mr-2" />
-              Français
-            </div>
-          </option>
-          <option value="en">
-            <div className="flex items-center">
-              <img src={enFlag} alt="English" className="w-6 h-6 mr-2" />
-              English
-            </div>
-          </option>
-          <option value="de">
-            <div className="flex items-center">
-              <img src={deFlag} alt="Deutsch" className="w-6 h-6 mr-2" />
-              Deutsch
-            </div>
-          </option>
+          <option value="fr">Français</option>
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
         </select>
       </label>
     </div>

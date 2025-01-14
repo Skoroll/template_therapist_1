@@ -1,12 +1,13 @@
 import React, { createContext, useContext, useState } from "react";
 
-// Type de contexte
+// Type des langues supportées
+type Lang = "fr" | "en" | "de";
+
 type LangContextType = {
-  lang: string;
-  changeLang: (newLang: string) => void; // Définir la fonction changeLang dans le type
+  lang: Lang; // Utilisation du type littéral ici
+  changeLang: (newLang: Lang) => void; // Changer la langue avec un type strict
 };
 
-// Création du contexte avec un type par défaut
 const LangContext = createContext<LangContextType | undefined>(undefined);
 
 export const useLang = (): LangContextType => {
@@ -17,12 +18,10 @@ export const useLang = (): LangContextType => {
   return context;
 };
 
-// LangProvider pour gérer la langue dans l'application
 export const LangProvider = ({ children }: { children: React.ReactNode }) => {
-  const [lang, setLang] = useState<string>("fr"); // Langue par défaut
+  const [lang, setLang] = useState<Lang>("fr"); // Langue par défaut
 
-  // Fonction pour changer la langue
-  const changeLang = (newLang: string) => {
+  const changeLang = (newLang: Lang) => {
     setLang(newLang);
   };
 
