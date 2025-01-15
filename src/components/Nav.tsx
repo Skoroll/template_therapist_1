@@ -39,7 +39,7 @@ function Nav() {
   };
 
   const navItems = [
-    { path: "/", label: chosenLang[lang].main },
+    { path: "/template_therapist_1", label: chosenLang[lang].main },
     { path: "/prices", label: chosenLang[lang].prices },
     { path: "/about", label: chosenLang[lang].about },
     { path: "/contact", label: chosenLang[lang].contact },

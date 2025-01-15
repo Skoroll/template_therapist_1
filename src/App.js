@@ -21,7 +21,7 @@ function App() {
           <Banner bannerIMG={imgForBanner} />
           <main>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/template_therapist_1" element={<Home />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/prices" element={<Prices />} />
               <Route path="/about" element={<About/>}/>
