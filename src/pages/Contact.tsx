@@ -35,7 +35,7 @@ const Contact = () => {
     <div className="min-h-screen bg-gray-100 home relative pos z-1 p-paddingS">
       <Title mainTitle={currentLang.contactTitle} subTitle={currentLang.contactSubtitle} />
 
-      <div className="max-w-4xl mx-auto mt-10 bg-white shadow-lg rounded-lg p-6 space-y-8">
+      <div className="max-w-4xl mx-auto mt-16 bg-white shadow-lg rounded-lg p-6 space-y-8">
         {/* Numéro de téléphone */}
         <section>
           <h2 className="text-2xl font-semibold text-gray-800">{currentLang.phone}</h2>

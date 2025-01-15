@@ -13,7 +13,7 @@ import "./App.css"
 
 function App() {
   return (
-    <div className="App relative font-sans bg-emerald-50">
+    <div className={`App relative font-sans ${'' /* bg-emerald-50 */}`}>
       <LangProvider>
         <LangSetting />
         <Router>
