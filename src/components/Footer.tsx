@@ -25,21 +25,21 @@ function Footer() {
     const currentLang = chosenLang[lang as Lang];
 
     return (
-        <footer className="bg-green-100 text-gray-800 py-6 px-4 md:px-8">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+        <footer className="bg-thirdColor  text-gray-800 p-paddingBase md:px-8">
+            <div className="max-w-7xl mx-auto flex-c md:flex-row justify-between items-center">
                 {/* Informations principales */}
                 <div className="text-center md:text-left mb-4 md:mb-0">
                     <p className="font-semibold text-lg">{currentLang.ui.yourTherapist}</p>
                     <p>{currentLang.intro.name}</p>
-                    <p>{currentLang.ui.email} : <a href="mailto:email@therapeute.com" className="text-green-700 underline">{contactInfo.email}</a></p>
-                    <p>{currentLang.ui.phone} : <a href={`tel:${contactInfo.telephone}`} className="text-green-700 underline">{contactInfo.telephone}</a></p>
+                    <p>{currentLang.ui.email} : <a href="mailto:email@therapeute.com" className="text-accentColor underline">{contactInfo.email}</a></p>
+                    <p>{currentLang.ui.phone} : <a href={`tel:${contactInfo.telephone}`} className="text-accentColor underline">{contactInfo.telephone}</a></p>
                 </div>
 
                 {/* Mentions légales et politique de confidentialité */}
                 <div className="text-sm text-center md:text-right">
-                    <p className="mb-2">{currentLang.ui.dataCollection}</p>
+                    <p className="mb-marginxS min-w-1/2">{currentLang.ui.dataCollection}</p>
                     <p>
-                        <a href="#" className="text-green-700 underline">{currentLang.ui.legal}</a> | <a href="#" className="text-green-700 underline">{currentLang.ui.confidential}</a>
+                        <a href="#" className="text-accentColor underline">{currentLang.ui.legal}</a> | <a href="#" className="text-accentColor underline">{currentLang.ui.confidential}</a>
                     </p>
                 </div>
             </div>

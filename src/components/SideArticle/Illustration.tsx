@@ -13,7 +13,7 @@ function Illustration({illuImage, altTxt, divClassName, imgClassName, illuTxt }:
     return(
         <div className={`illustration relative max-h-80 w-full md:max-h-80 md:h-full ${divClassName}`}>
             <img src={illuImage} alt={altTxt} className={`illustration-img max-h-80  h-full w-full ${imgClassName}`}/>
-            <p className="illustration-text flex absolute italic bottom-0 h-12 p-3 align-baseline bg-blackBG w-full text-white">{illuTxt}</p>
+            <p className="illustration-text flex absolute italic bottom-0 h-12 p-paddingS align-baseline bg-blackBG w-full text-white">{illuTxt}</p>
         </div>
     )
 }

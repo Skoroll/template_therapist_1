@@ -23,7 +23,7 @@ function Prices() {
   const currentLang = pricesLang[lang]; // Récupère les données correspondant à la langue actuelle
 
   return (
-    <div className="prices flex flex-col mt-10 md:mt-0 relative pos z-1 p-3 gap-6 ">
+    <div className="prices flex-c mt-10 md:mt-0 relative pos z-1 p-paddingS gap-gapBase ">
       <Title mainTitle={currentLang.mainTitle} subTitle={currentLang.subTitle} />
 
       <div className="prices-details">

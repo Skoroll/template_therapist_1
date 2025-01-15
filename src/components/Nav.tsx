@@ -49,15 +49,14 @@ function Nav() {
     <nav
       className="
         nav 
-        flex 
-        flex-col
+        flex-c
         m-auto 
-        mt-2
+        mt-marginxS
         relative
         text-secondColor
       "
     >
-      <ul className="flex gap-2 m-auto mr-0 border-b-2 border-secondColor p-1">
+      <ul className="flex gap-gapXS m-auto mr-0 border-b-2 border-secondColor p-1">
         {navItems.map((item) => (
           <li
             key={item.path}
@@ -78,8 +77,8 @@ function Nav() {
       <button
         onClick={handleModalClick}
         className="
-          mt-3
-          order-btn p-3             
+          mt-marginxS
+          order-btn p-paddingS             
           cursor-pointer
           hover:bg-secondColor 
           hover:text-white

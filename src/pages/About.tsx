@@ -44,7 +44,7 @@ const About = () => {
 
 
   return (
-    <div className="about flex flex-col relative pos z-1 p-3 gap-6 ">
+    <div className="about flex-c relative pos z-1 p-paddingS gap-gapBase ">
       <Title
         mainTitle={introLang[lang].aboutTitle}
         subTitle={introLang[lang].aboutSubtitle}
@@ -52,10 +52,9 @@ const About = () => {
 
       <div className="
         who 
-        flex 
-        flex-col 
-        bg-green-100 
-        p-3  
+        flex-c
+        bg-thirdColor  
+        p-paddingS  
         mt-10 
         md:flex-row 
         md:bg-transparent 
@@ -74,13 +73,13 @@ const About = () => {
             {introLang[lang].name} {introLang[lang].job}
           </h3>
           <p
-            className="p-3"
+            className="p-paddingS"
             dangerouslySetInnerHTML={{
               __html: introLang[lang].aboutMyLife,
             }}
           />
           <p
-            className="p-3"
+            className="p-paddingS"
             dangerouslySetInnerHTML={{ 
               __html: introLang[lang].text }}
           />
@@ -90,11 +89,11 @@ const About = () => {
       <Divider className=" w-1/2 h-1 m-auto" />
 
       <div
-        className="formation flex flex-col gap-3 p-6 border-2 bg-gray-200 rounded-2xl"
+        className="formation flex-c gap-gapS p-6 border-2 bg-gray-200 rounded-2xl"
         style={{ minHeight: "300px" }}
       >
         <h3
-          className="p-3 bg-white text-center text-4xl rounded-2xl"
+          className="p-paddingS bg-white text-center text-4xl rounded-2xl"
           dangerouslySetInnerHTML={{
             __html: introLang[lang].diploma,
           }}
@@ -102,7 +101,7 @@ const About = () => {
         {["diploma1", "diploma2", "diploma3"].map((key, index) => (
           <div
             key={index}
-            className="formation-detail bg-white p-3 rounded-2xl"
+            className="formation-detail bg-white p-paddingS rounded-2xl"
           >
             <h4
               className="text-2xl"

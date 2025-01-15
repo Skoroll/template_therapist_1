@@ -18,18 +18,18 @@ const howDetails: ConsultationHow = consultationHow as ConsultationHow;
 
 function How() {
   return (
-    <div className="how bg-green-100  p-6">
+    <div className="how bg-thirdColor   p-6">
       <h2 className="text-3xl mb-3 ">
         {frUi.consultationHowHeading} :
       </h2>
 
-      <div className="how__details flex flex-col gap-3">
+      <div className="how__details flex flex-c gap-gapS">
         {Object.entries(howDetails).map(([key, consultations]) => (
           <div key={key} className="consultation-category p-5 bg-slate-50">
             {consultations.map((consultation: ConsultationDetails, index: number) => (
               <div
                 key={`${key}-${index}`}
-                className="consultation  flex flex-col gap-3"
+                className="consultation  flex flex-c gap-gapS"
               >
                 <p className="text-2xl">
                   <strong>{consultation.name}</strong>

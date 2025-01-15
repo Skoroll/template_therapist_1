@@ -55,7 +55,7 @@ function Home() {
   ];
 
   return (
-    <div className="home flex flex-col relative pos z-1 p-3 gap-6 ">
+    <div className="home flex-c relative pos z-1 p-paddingS gap-gapBase ">
       <Title mainTitle={currentLang.name} subTitle={currentLang.job} />
 
       <div className="presentation mt-10">

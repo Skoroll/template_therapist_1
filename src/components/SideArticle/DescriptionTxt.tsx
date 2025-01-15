@@ -7,7 +7,7 @@ interface DescriptionProps {
 
 function DescriptionText({subtitle, content}: DescriptionProps) {
     return(
-        <div className="description-text p-3">
+        <div className="description-text p-paddingS">
             <h3 className="desc-sub text-2xl">{subtitle}</h3>
             <p className="desc-text" dangerouslySetInnerHTML={{ __html: content }}></p>
         </div>

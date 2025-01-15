@@ -7,10 +7,9 @@ function Header() {
     <header
       className="
             header 
-            flex 
-            flex-col 
+            flex-c
             z-20 
-            p-3 
+            p-paddingS 
             text-white
              relative
             md:flex-row

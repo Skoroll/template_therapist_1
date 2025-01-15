@@ -23,7 +23,7 @@ const Reservation = () => {
   const currentLang = modalLang[lang]; // Récupère les données correspondant à la langue actuelle
 
   return (
-    <div className="reservation flex flex-col gap-3 p-3">
+    <div className="reservation flex-c gap-gapS p-paddingS">
       <div className="plateform-logo h-32 w-full flex z-50">
         <p className="m-auto">Plateforme Logo</p>
       </div>

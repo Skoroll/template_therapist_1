@@ -18,13 +18,13 @@ function LangSetting() {
   };
 
   return (
-    <div className="lang-setting absolute top-2 right-2 text-black">
+    <div className="lang-setting absolute top-marginxS right-marginxS text-black">
       <label htmlFor="lang">
         <select
           id="lang"
           value={lang}
           onChange={handleChange}
-          className="appearance-none py-2 px-3 rounded-lg"
+          className="appearance-none py-marginxS px-3 rounded-lg"
         >
           <option value="fr">Français</option>
           <option value="en">English</option>

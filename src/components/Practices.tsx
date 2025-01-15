@@ -45,7 +45,7 @@ function Practices() {
   const currentPractices = practicesLang[lang]; // Récupère les pratiques correspondant à la langue actuelle
 
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-gapXS">
       {currentPractices.map((practice, index) => (
         <div
           key={practice.id}
@@ -53,7 +53,7 @@ function Practices() {
             index === currentPractices.length - 1 && currentPractices.length % 2 !== 0
               ? "w-full" // Dernier élément seul prend toute la largeur
               : "w-full sm:w-[49%]"
-          } flex flex-col bg-mainColor text-white p-3`}
+          } flex-c bg-mainColor text-white p-paddingS`}
         >
           <h3 className="text-2xl border-b-2 p-1">{practice.name}</h3>
           <p>
@@ -63,7 +63,7 @@ function Practices() {
             {currentLang.price} : {practice.price}€
           </p>
           <p>{practice.desc}</p>
-          <h4 className="mt-2 mb-2 text-xl underline">{currentLang.who}</h4>
+          <h4 className="mt-marginxS mb-marginxS text-xl underline">{currentLang.who}</h4>
           <ul className="list-disc pl-7">
             {practice.why.map((reason, reasonIndex) => (
               <li key={reasonIndex}>{reason}</li>
