@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/template_therapist_1/static/css/main.a7523b05.css",
+    "main.js": "/template_therapist_1/static/js/main.0b3b88fd.js",
+    "static/js/488.f167a148.chunk.js": "/template_therapist_1/static/js/488.f167a148.chunk.js",
+    "static/media/istockphoto-1450268558-2048x2048.webp": "/template_therapist_1/static/media/istockphoto-1450268558-2048x2048.403998743c49eb0cf743.webp",
+    "static/media/istockphoto-1336275809-2048x2048.webp": "/template_therapist_1/static/media/istockphoto-1336275809-2048x2048.0bff048cb478606dd770.webp",
+    "static/media/dark-plant-background-free-photo.webp": "/template_therapist_1/static/media/dark-plant-background-free-photo.a09861f0c40322b98209.webp",
+    "static/media/istockphoto-1468616190-2048x2048.webp": "/template_therapist_1/static/media/istockphoto-1468616190-2048x2048.a0fad2ad7e4d21974b35.webp",
+    "static/media/istockphoto-1391812172-2048x2048.webp": "/template_therapist_1/static/media/istockphoto-1391812172-2048x2048.dcd36a8238c24c9f5db7.webp",
+    "static/media/united-kingdom.png": "/template_therapist_1/static/media/united-kingdom.b9a2ba74e5f8a55977e7.png",
+    "static/media/france.png": "/template_therapist_1/static/media/france.73f91b4e96d67f8a03f0.png",
+    "static/media/germany.png": "/template_therapist_1/static/media/germany.cc670a050b591bf6656d.png",
+    "index.html": "/template_therapist_1/index.html",
+    "main.a7523b05.css.map": "/template_therapist_1/static/css/main.a7523b05.css.map",
+    "main.0b3b88fd.js.map": "/template_therapist_1/static/js/main.0b3b88fd.js.map",
+    "488.f167a148.chunk.js.map": "/template_therapist_1/static/js/488.f167a148.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7523b05.css",
+    "static/js/main.0b3b88fd.js"
+  ]
+}
