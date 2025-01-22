@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/template_therapist_1/static/css/main.a7523b05.css",
-    "main.js": "/template_therapist_1/static/js/main.29e5e541.js",
+    "main.css": "/template_therapist_1/static/css/main.305904ad.css",
+    "main.js": "/template_therapist_1/static/js/main.68ea56a8.js",
     "static/js/488.f167a148.chunk.js": "/template_therapist_1/static/js/488.f167a148.chunk.js",
     "static/media/istockphoto-1450268558-2048x2048.webp": "/template_therapist_1/static/media/istockphoto-1450268558-2048x2048.403998743c49eb0cf743.webp",
     "static/media/istockphoto-1336275809-2048x2048.webp": "/template_therapist_1/static/media/istockphoto-1336275809-2048x2048.0bff048cb478606dd770.webp",
@@ -12,12 +12,12 @@
     "static/media/france.png": "/template_therapist_1/static/media/france.73f91b4e96d67f8a03f0.png",
     "static/media/germany.png": "/template_therapist_1/static/media/germany.cc670a050b591bf6656d.png",
     "index.html": "/template_therapist_1/index.html",
-    "main.a7523b05.css.map": "/template_therapist_1/static/css/main.a7523b05.css.map",
-    "main.29e5e541.js.map": "/template_therapist_1/static/js/main.29e5e541.js.map",
+    "main.305904ad.css.map": "/template_therapist_1/static/css/main.305904ad.css.map",
+    "main.68ea56a8.js.map": "/template_therapist_1/static/js/main.68ea56a8.js.map",
     "488.f167a148.chunk.js.map": "/template_therapist_1/static/js/488.f167a148.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7523b05.css",
-    "static/js/main.29e5e541.js"
+    "static/css/main.305904ad.css",
+    "static/js/main.68ea56a8.js"
   ]
 }
