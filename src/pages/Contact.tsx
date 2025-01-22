@@ -32,7 +32,7 @@ const Contact = () => {
   const currentLang = contactLang[lang]; // Récupère les données correspondant à la langue actuelle
 
   return (
-    <div className="min-h-screen bg-gray-100 home relative pos z-1 p-paddingS">
+    <div className="min-h-screen bg-grayBack home relative pos z-1 p-paddingS">
       <Title mainTitle={currentLang.contactTitle} subTitle={currentLang.contactSubtitle} />
 
       <div className="max-w-4xl mx-auto mt-16 bg-white shadow-lg rounded-lg p-6 space-y-8">
@@ -123,7 +123,7 @@ const Contact = () => {
             {/* Bouton Envoyer */}
             <button
               type="submit"
-              className="w-1/2 m-auto bg-secondColor text-white border border-transparent font-semibold py-2 px-4 rounded-lg hover:bg-white hover:text-black hover:border-gray-300 transition duration-300"
+              className="w-1/2 m-auto bg-accentColor text-white border border-transparent font-semibold py-2 px-4 rounded-lg hover:bg-white hover:text-black hover:border-gray-300 transition duration-300"
             >
               {currentLang.submitButton}
             </button>

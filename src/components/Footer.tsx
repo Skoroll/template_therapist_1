@@ -25,7 +25,7 @@ function Footer() {
     const currentLang = chosenLang[lang as Lang];
 
     return (
-        <footer className="bg-thirdColor  text-gray-800 p-paddingBase md:px-8">
+        <footer className="bg-thirdColor  text-gray-800 p-paddingBase mt-32 md:px-8">
             <div className="max-w-7xl mx-auto flex-c md:flex-row justify-between items-center">
                 {/* Informations principales */}
                 <div className="text-center md:text-left mb-4 md:mb-0">

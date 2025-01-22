@@ -18,8 +18,8 @@ const howDetails: ConsultationHow = consultationHow as ConsultationHow;
 
 function How() {
   return (
-    <div className="how bg-thirdColor   p-6">
-      <h2 className="text-3xl mb-3 ">
+    <div className="how bg-accentColor   p-6">
+      <h2 className="text-3xl mb-3 text-textLight">
         {frUi.consultationHowHeading} :
       </h2>
 

@@ -20,13 +20,13 @@ module.exports = {
         sans: ['"Lato"', ...defaultTheme.fontFamily.sans], // Police principale
       },
       colors: {
-        mainColor: "#D97706",        // Orange brûlé pour un aspect chaleureux et audacieux
-        secondColor: "#FACC15",      // Jaune doré lumineux pour attirer l'attention
-        blackBG: "#00000077",          // Bleu-noir profond pour un contraste élégant
-        textLight: "#F3F4F6",        // Blanc cassé pour une bonne lisibilité
-        accentColor: "#EF4444",      // Rouge vif pour des éléments marquants
-        thirdColor: "#FDE68A"        // Jaune pastel doux pour un équilibre visuel
-        
+        mainColor: "#237e7f",        
+        secondColor: "#FACC15",      
+        blackBG: "#00000077",          
+        textLight: "#F3F4F6",        
+        accentColor: "#4B8D6C ",      
+        thirdColor: "#D7C2B2 ",        
+        grayBack: "#F3F4F6"
         
       },
       backgroundImage: {
